@@ -2,21 +2,19 @@ package com.emirates.test.model;
 
 import java.util.UUID;
 
-import org.springframework.data.couchbase.core.mapping.Document;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-import com.couchbase.client.java.repository.annotation.Field;
-import com.couchbase.client.java.repository.annotation.Id;
-
-@Document
+@Entity
 public class Task {
 	
 	@Id
 	private String id;
 	
-	@Field
+	//@Field
 	private String name;
 
-	@Field
+	//@Field
 	private Boolean completed;
 	
 	public Task() {}
